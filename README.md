@@ -25,7 +25,7 @@ Make sure it contains,
     
     }
 
-The "#ipv4" part is an "indicator" to sed (used in add_dhcp_entry.sh) to insert the DHCP entries below this line.
+The "#ipv4" part is an "indicator" to sed (used in add_dhcp_entry.sh) to insert the DHCP host entries below this line.
 
 ## Adding an entry
 
