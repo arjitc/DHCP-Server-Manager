@@ -25,6 +25,14 @@ Make sure it contains,
     
     }
 
+The "#ipv4" part is an "indicator" to sed (used in add_dhcp_entry.sh) to insert the DHCP entries below this line.
+
 ## Adding an entry
 
     sh add_dhcp_entry.sh HOSTNAME MAC_ADDRESS IP_ADDRESS SUBNET GATEWAY
+
+For example,
+
+    sh add_dhcp_entry.sh computer1 AA:BB:CC:DD:EE:FF 192.168.0.2 255.255.255.0 192.168.0.1
+    
+This will assign the host "computer1" with MAC address "AA:BB:CC:DD:EE:FF", IP address "192.168.0.2", subnet "255.255.255.0" and gateway "192.168.0.1"
