@@ -27,3 +27,13 @@ For example,
     sh add_dhcp_entry.sh computer1 AA:BB:CC:DD:EE:FF 192.168.0.2 255.255.255.0 192.168.0.1
     
 This will assign the host "computer1" with MAC address "AA:BB:CC:DD:EE:FF", IP address "192.168.0.2", subnet "255.255.255.0" and gateway "192.168.0.1"
+
+## Removing an entry
+
+    sh remove_dhcp_entry.sh HOSTNAME
+    
+For example,
+
+    sh remove_dhcp_entry.sh computer1
+
+This will remove the entry for "computer1" and restart dhcpd
